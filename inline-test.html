@@ -1,1 +1,174 @@
-THIS SHOULD BE A LINTER ERROR
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test - Thompson Legal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .header {
+            background: #ffffff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+        }
+        .nav-link {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            color: #3498db;
+        }
+        .hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        .test-section {
+            padding: 3rem 0;
+            background: white;
+        }
+        .success-box {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        .error-box {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h2>Thompson Legal</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">CSS Styling Test</h1>
+            <p class="hero-subtitle">Testing if CSS is working properly</p>
+            <a href="#" class="btn-primary">Test Button</a>
+        </div>
+    </section>
+
+    <section class="test-section">
+        <div class="container">
+            <div class="success-box">
+                <h3>✅ If you can see this styled properly:</h3>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    <li>Inter font (clean, modern text)</li>
+                    <li>Blue button with shadow</li>
+                    <li>Gray gradient background above</li>
+                    <li>Green success box (this one!)</li>
+                    <li>Proper spacing and layout</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Then CSS is working! The issue is with the external CSS file loading.</strong></p>
+            </div>
+
+            <div class="error-box">
+                <h3>❌ If this looks plain (no colors, basic fonts):</h3>
+                <p>Then there's a bigger CSS loading issue. Follow the troubleshooting steps below.</p>
+            </div>
+
+            <h2>Troubleshooting Steps:</h2>
+            <ol style="margin-left: 1.5rem; line-height: 1.8;">
+                <li><strong>How are you opening the files?</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                        <li>❌ Don't double-click HTML files directly</li>
+                        <li>✅ Use a local server or live preview in your code editor</li>
+                    </ul>
+                </li>
+                <li><strong>Check browser console:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                        <li>Press F12 → Console tab</li>
+                        <li>Look for red errors about CSS files</li>
+                    </ul>
+                </li>
+                <li><strong>Verify file structure:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                        <li>index.html should be in root folder</li>
+                        <li>css/style.css should exist</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
