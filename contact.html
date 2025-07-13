@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for proper document structure and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page-specific title for SEO -->
     <title>Contact Us - Thompson Legal</title>
+    
+    <!-- External stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts for professional typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER SECTION: Main navigation (consistent across all pages) -->
     <header class="header">
         <nav class="nav">
+            <!-- Brand/Logo section -->
             <div class="nav-brand">
                 <h2>Thompson Legal</h2>
             </div>
+            
+            <!-- Main navigation menu with active state on Contact -->
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
+            
+            <!-- Mobile hamburger menu toggle -->
             <div class="nav-toggle">
                 <span></span>
                 <span></span>
@@ -27,24 +39,35 @@
         </nav>
     </header>
 
+    <!-- MAIN CONTENT AREA -->
     <main>
+        <!-- HERO SECTION: Page introduction and main headline -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
+                    <!-- Main page title -->
                     <h1 class="hero-title">Contact Thompson Legal</h1>
+                    <!-- Supporting tagline encouraging contact -->
                     <p class="hero-subtitle">Ready to discuss your legal needs? We're here to help.</p>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT MAIN SECTION: Contact information and contact form -->
         <section class="contact-main">
             <div class="container">
                 <div class="contact-grid">
+                    
+                    <!-- LEFT SIDE: Contact information -->
                     <div class="contact-info">
+                        <!-- Section heading -->
                         <h2>Get In Touch</h2>
+                        <!-- Introduction paragraph -->
                         <p>We're here to help you navigate your legal challenges. Contact us today for a free consultation.</p>
                         
+                        <!-- Contact details container -->
                         <div class="contact-details">
+                            <!-- Office address -->
                             <div class="contact-item">
                                 <h3>Office Address</h3>
                                 <p>123 Legal Street<br>
@@ -52,16 +75,19 @@
                                 City, State 12345</p>
                             </div>
                             
+                            <!-- Phone number with clickable link -->
                             <div class="contact-item">
                                 <h3>Phone</h3>
                                 <p><a href="tel:5551234567">(555) 123-4567</a></p>
                             </div>
                             
+                            <!-- Email address with clickable link -->
                             <div class="contact-item">
                                 <h3>Email</h3>
                                 <p><a href="mailto:info@thompsonlegal.com">info@thompsonlegal.com</a></p>
                             </div>
                             
+                            <!-- Office hours -->
                             <div class="contact-item">
                                 <h3>Office Hours</h3>
                                 <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
@@ -70,6 +96,7 @@
                             </div>
                         </div>
 
+                        <!-- Emergency contact information -->
                         <div class="emergency-contact">
                             <h3>Emergency Contact</h3>
                             <p>For urgent legal matters after hours, call our emergency line:</p>
@@ -77,24 +104,32 @@
                         </div>
                     </div>
 
+                    <!-- RIGHT SIDE: Contact form -->
                     <div class="contact-form-section">
+                        <!-- Form heading -->
                         <h2>Send Us a Message</h2>
+                        
+                        <!-- Contact form with JavaScript handling -->
                         <form id="contact-form" class="contact-form">
+                            <!-- Full name field (required) -->
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             
+                            <!-- Email field (required) -->
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             
+                            <!-- Phone number field (optional) -->
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
                                 <input type="tel" id="phone" name="phone">
                             </div>
                             
+                            <!-- Service selection dropdown -->
                             <div class="form-group">
                                 <label for="service">Legal Service Needed</label>
                                 <select id="service" name="service">
@@ -107,6 +142,7 @@
                                 </select>
                             </div>
                             
+                            <!-- Urgency level selection -->
                             <div class="form-group">
                                 <label for="urgency">Urgency Level</label>
                                 <select id="urgency" name="urgency">
@@ -116,11 +152,13 @@
                                 </select>
                             </div>
                             
+                            <!-- Message textarea (required) -->
                             <div class="form-group">
                                 <label for="message">Message *</label>
                                 <textarea id="message" name="message" rows="6" placeholder="Please describe your legal issue and any relevant details..." required></textarea>
                             </div>
                             
+                            <!-- Consent checkbox (required) -->
                             <div class="form-group checkbox-group">
                                 <label class="checkbox-label">
                                     <input type="checkbox" id="consent" name="consent" required>
@@ -129,6 +167,7 @@
                                 </label>
                             </div>
                             
+                            <!-- Submit button -->
                             <button type="submit" class="btn-primary form-submit">Send Message</button>
                         </form>
                     </div>
@@ -136,20 +175,30 @@
             </div>
         </section>
 
+        <!-- CONSULTATION REMINDER SECTION: Reinforces free consultation offer -->
         <section class="consultation-reminder">
             <div class="container">
                 <div class="consultation-content">
+                    <!-- Section heading -->
                     <h2>Free Consultation Available</h2>
+                    <!-- Reminder text -->
                     <p>Remember, we offer free consultations for most legal matters. There's no risk in reaching out to discuss your situation.</p>
+                    
+                    <!-- Benefits of free consultation -->
                     <div class="consultation-benefits">
+                        <!-- First benefit: Confidential -->
                         <div class="benefit">
                             <h3>Confidential</h3>
                             <p>All communications are protected by attorney-client privilege</p>
                         </div>
+                        
+                        <!-- Second benefit: No Pressure -->
                         <div class="benefit">
                             <h3>No Pressure</h3>
                             <p>We'll provide honest advice with no obligation to hire us</p>
                         </div>
+                        
+                        <!-- Third benefit: Expert Guidance -->
                         <div class="benefit">
                             <h3>Expert Guidance</h3>
                             <p>Get professional legal perspective on your situation</p>
@@ -160,13 +209,17 @@
         </section>
     </main>
 
+    <!-- FOOTER SECTION: Additional links and contact information (consistent across all pages) -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <!-- Brand section in footer -->
                 <div class="footer-section">
                     <h3>Thompson Legal</h3>
                     <p>Professional legal services with integrity and dedication.</p>
                 </div>
+                
+                <!-- Quick navigation links -->
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
@@ -176,17 +229,22 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
+                
+                <!-- Contact information -->
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <p>123 Legal Street<br>City, State 12345<br>Phone: (555) 123-4567<br>Email: info@thompsonlegal.com</p>
                 </div>
             </div>
+            
+            <!-- Copyright and legal disclaimer -->
             <div class="footer-bottom">
                 <p>&copy; 2024 Thompson Legal. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript for interactive functionality -->
     <script src="js/script.js"></script>
 </body>
 </html>

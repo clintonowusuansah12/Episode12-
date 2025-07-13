@@ -1,26 +1,40 @@
+/* ============================================
+   THOMPSON LEGAL WEBSITE STYLES
+   ============================================ */
+
 /* Reset and Base Styles */
+/* Remove default margins and padding, set consistent box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base body styles - typography, colors, and layout foundation */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: #2c3e50;
     background-color: #ffffff;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Container */
+/* ============================================
+   CONTAINER AND LAYOUT
+   ============================================ */
+
+/* Main container for content - centers and limits width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* Typography */
+/* ============================================
+   TYPOGRAPHY STYLES
+   ============================================ */
+
+/* Base heading styles - consistent typography hierarchy */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.3;
@@ -28,37 +42,46 @@ h1, h2, h3, h4, h5, h6 {
     color: #1a1a1a;
 }
 
+/* Large heading for hero sections */
 h1 {
     font-size: 3.5rem;
     font-weight: 700;
 }
 
+/* Section headings */
 h2 {
     font-size: 2.5rem;
 }
 
+/* Subsection headings */
 h3 {
     font-size: 1.8rem;
 }
 
+/* Body text styling */
 p {
     margin-bottom: 1.5rem;
     color: #555;
     font-size: 1.1rem;
 }
 
-/* Header */
+/* ============================================
+   HEADER AND NAVIGATION
+   ============================================ */
+
+/* Header container - fixed positioning for sticky navigation */
 .header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 0.5rem 0;
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation container - flexbox layout for nav items */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -68,37 +91,41 @@ p {
     margin: 0 auto;
 }
 
+/* Brand/logo styling */
 .nav-brand h2 {
-    color: #2c3e50;
+    color: #1a1a1a;
     font-size: 1.8rem;
     font-weight: 700;
-    margin: 0;
+    margin-bottom: 0;
 }
 
+/* Navigation menu list - horizontal layout */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
+/* Navigation link styling */
 .nav-link {
     text-decoration: none;
-    color: #555;
+    color: #333;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 0.5rem 0;
     position: relative;
 }
 
+/* Navigation link hover and active states */
 .nav-link:hover,
 .nav-link.active {
     color: #3498db;
 }
 
+/* Underline animation for nav links */
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 0;
     height: 2px;
@@ -106,140 +133,176 @@ p {
     transition: width 0.3s ease;
 }
 
+/* Show underline on hover and active state */
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
 }
 
+/* Mobile menu toggle button - hidden by default */
 .nav-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
+/* Hamburger menu lines */
 .nav-toggle span {
     width: 25px;
     height: 3px;
-    background: #2c3e50;
+    background: #333;
     margin: 3px 0;
     transition: 0.3s;
+    display: block;
 }
 
-/* Hero Section */
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+/* Hero section - full viewport height with centered content */
 .hero {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 8rem 0 4rem;
-    margin-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     text-align: center;
 }
 
+/* Hero content container */
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Hero title styling */
 .hero-title {
-    margin-bottom: 1.5rem;
-    color: #2c3e50;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 
+/* Hero subtitle styling */
 .hero-subtitle {
     font-size: 1.3rem;
-    margin-bottom: 3rem;
-    color: #666;
-    font-weight: 400;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
+/* Hero action buttons container */
 .hero-actions {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-/* Buttons */
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+/* Base button styles */
 .btn-primary,
 .btn-secondary {
     display: inline-block;
     padding: 1rem 2rem;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 5px;
     transition: all 0.3s ease;
-    font-size: 1.1rem;
     border: none;
     cursor: pointer;
+    font-size: 1.1rem;
 }
 
+/* Primary button - main call-to-action */
 .btn-primary {
     background: #3498db;
     color: white;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
+/* Primary button hover state */
 .btn-primary:hover {
     background: #2980b9;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
 }
 
+/* Secondary button - alternative action */
 .btn-secondary {
     background: transparent;
-    color: #3498db;
-    border: 2px solid #3498db;
-}
-
-.btn-secondary:hover {
-    background: #3498db;
     color: white;
-    transform: translateY(-2px);
+    border: 2px solid white;
 }
 
-/* Features Section */
-.features {
-    padding: 5rem 0;
+/* Secondary button hover state */
+.btn-secondary:hover {
     background: white;
+    color: #3498db;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
-}
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
 
-.feature {
-    text-align: center;
-    padding: 2rem;
-    transition: transform 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-}
-
-.feature h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.feature p {
-    color: #666;
-    line-height: 1.7;
-}
-
-/* About Preview */
-.about-preview {
+/* Features section container */
+.features {
     padding: 5rem 0;
     background: #f8f9fa;
 }
 
+/* Features grid - responsive layout */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Individual feature item */
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Feature hover effect */
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature title */
+.feature h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+/* Feature description */
+.feature p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   ABOUT PREVIEW SECTION
+   ============================================ */
+
+/* About preview section */
+.about-preview {
+    padding: 5rem 0;
+    background: white;
+}
+
+/* About content container */
 .about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
+/* About points list styling */
 .about-points {
     list-style: none;
     margin: 2rem 0;
@@ -249,109 +312,131 @@ p {
     margin-right: auto;
 }
 
+/* Individual about point */
 .about-points li {
-    padding: 0.8rem 0;
-    padding-left: 2rem;
+    padding: 0.5rem 0;
     position: relative;
-    color: #555;
+    padding-left: 2rem;
     font-size: 1.1rem;
+    color: #555;
 }
 
+/* Bullet point styling using pseudo-element */
 .about-points li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #27ae60;
+    color: #3498db;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-/* Testimonials */
+/* ============================================
+   TESTIMONIALS SECTION
+   ============================================ */
+
+/* Testimonials section */
 .testimonials {
     padding: 5rem 0;
-    background: white;
+    background: #f8f9fa;
 }
 
+/* Section title styling */
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #1a1a1a;
 }
 
+/* Testimonials grid layout */
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
+/* Individual testimonial card */
 .testimonial {
-    background: #f8f9fa;
-    padding: 2.5rem;
-    border-radius: 15px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+/* Testimonial hover effect */
 .testimonial:hover {
     transform: translateY(-5px);
 }
 
+/* Testimonial quote text */
 .testimonial p {
     font-style: italic;
-    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: #555;
-    line-height: 1.7;
-}
-
-.testimonial-author strong {
-    color: #2c3e50;
     font-size: 1.1rem;
 }
 
+/* Testimonial author name */
+.testimonial-author strong {
+    color: #3498db;
+    display: block;
+}
+
+/* Testimonial author title */
 .testimonial-author span {
     color: #888;
-    font-size: 0.95rem;
-    display: block;
-    margin-top: 0.3rem;
+    font-size: 0.9rem;
 }
 
-/* CTA Section */
+/* ============================================
+   CALL-TO-ACTION SECTION
+   ============================================ */
+
+/* CTA section with gradient background */
 .cta {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    text-align: center;
 }
 
+/* CTA heading */
 .cta-content h2 {
     color: white;
     margin-bottom: 1rem;
 }
 
+/* CTA description */
 .cta-content p {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+/* CTA button styling */
 .cta .btn-primary {
     background: white;
     color: #3498db;
 }
 
+/* CTA button hover state */
 .cta .btn-primary:hover {
     background: #f8f9fa;
-    transform: translateY(-2px);
 }
 
-/* Footer */
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+/* Footer container */
 .footer {
-    background: #2c3e50;
+    background: #1a1a1a;
     color: white;
     padding: 3rem 0 1rem;
 }
 
+/* Footer content grid */
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -359,186 +444,237 @@ p {
     margin-bottom: 2rem;
 }
 
+/* Footer section headings */
 .footer-section h3,
 .footer-section h4 {
     color: white;
     margin-bottom: 1rem;
 }
 
+/* Footer text */
 .footer-section p,
-.footer-section li {
-    color: #bdc3c7;
-    line-height: 1.7;
+.footer-section ul {
+    color: #ccc;
 }
 
+/* Footer list styling */
 .footer-section ul {
     list-style: none;
 }
 
+/* Footer list items */
 .footer-section ul li {
     margin-bottom: 0.5rem;
 }
 
+/* Footer links */
 .footer-section a {
-    color: #bdc3c7;
+    color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* Footer link hover state */
 .footer-section a:hover {
     color: #3498db;
 }
 
+/* Footer bottom section */
 .footer-bottom {
-    border-top: 1px solid #34495e;
+    border-top: 1px solid #333;
     padding-top: 1rem;
     text-align: center;
-    color: #95a5a6;
+    color: #888;
 }
 
-/* About Page Styles */
+/* ============================================
+   ABOUT PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* About detailed section */
 .about-detailed {
     padding: 5rem 0;
     background: white;
 }
 
+/* About intro section */
 .about-intro {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
+/* ============================================
+   TEAM SECTION
+   ============================================ */
+
+/* Team section */
 .team {
     padding: 5rem 0;
     background: #f8f9fa;
 }
 
+/* Team grid layout */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
+/* Individual team member card */
 .team-member {
     background: white;
-    padding: 2.5rem;
-    border-radius: 15px;
-    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+/* Team member hover effect */
 .team-member:hover {
     transform: translateY(-5px);
 }
 
+/* Team member name */
 .team-member h3 {
-    color: #2c3e50;
+    color: #3498db;
     margin-bottom: 0.5rem;
 }
 
+/* Team member title */
 .team-member h4 {
-    color: #3498db;
-    font-size: 1.2rem;
+    color: #888;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
+/* Team member credentials */
 .member-credentials {
-    margin-top: 1.5rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 1rem;
 }
 
+/* Individual credential badge */
 .member-credentials span {
-    background: #e9ecef;
+    background: #3498db;
+    color: white;
     padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: #555;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
+/* ============================================
+   VALUES SECTION
+   ============================================ */
+
+/* Values section */
 .values {
     padding: 5rem 0;
     background: white;
 }
 
+/* Values grid layout */
 .values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    margin-top: 3rem;
-}
-
-.value {
-    text-align: center;
-    padding: 2rem;
-}
-
-.value h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.achievements {
-    padding: 5rem 0;
-    background: #f8f9fa;
-}
-
-.achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
+/* Individual value item */
+.value {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Value title */
+.value h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   ACHIEVEMENTS SECTION
+   ============================================ */
+
+/* Achievements section */
+.achievements {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+/* Achievements grid layout */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Individual achievement card */
 .achievement {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+/* Achievement hover effect */
 .achievement:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
+/* Achievement title */
 .achievement h3 {
     color: #3498db;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
-/* Services Page Styles */
+/* ============================================
+   SERVICES PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* Services overview section */
 .services-overview {
     padding: 5rem 0;
     background: white;
 }
 
+/* Individual service detailed section */
 .service-detailed {
     margin-bottom: 4rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid #e9ecef;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
 }
 
+/* Remove margin from last service */
 .service-detailed:last-child {
-    border-bottom: none;
     margin-bottom: 0;
 }
 
+/* Service title */
 .service-detailed h2 {
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
 }
 
+/* Service features container */
 .service-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
+/* Service list styling */
 .service-list ul,
 .service-process ul,
 .service-benefits ul,
@@ -548,17 +684,19 @@ p {
     margin-top: 1rem;
 }
 
+/* Service list items */
 .service-list li,
 .service-process li,
 .service-benefits li,
 .service-approach li,
 .service-value li {
     padding: 0.5rem 0;
-    padding-left: 1.5rem;
     position: relative;
+    padding-left: 1.5rem;
     color: #555;
 }
 
+/* Service list bullet points */
 .service-list li::before,
 .service-process li::before,
 .service-benefits li::before,
@@ -569,139 +707,168 @@ p {
     left: 0;
     color: #3498db;
     font-weight: bold;
-    font-size: 1.2rem;
 }
 
+/* ============================================
+   CONSULTATION INFO SECTION
+   ============================================ */
+
+/* Consultation info section */
 .consultation-info {
     padding: 5rem 0;
     background: #f8f9fa;
 }
 
+/* Consultation details grid */
 .consultation-details {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
     margin-top: 3rem;
 }
 
+/* Consultation list styling */
 .consultation-list {
     list-style: none;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
+/* Consultation list items */
 .consultation-list li {
-    padding: 0.8rem 0;
-    padding-left: 2rem;
+    padding: 0.5rem 0;
     position: relative;
+    padding-left: 2rem;
     color: #555;
 }
 
+/* Consultation list bullet points */
 .consultation-list li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #27ae60;
+    color: #3498db;
     font-weight: bold;
 }
 
+/* Consultation CTA section */
 .consultation-cta {
     background: white;
     padding: 2rem;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* ============================================
+   CONTACT PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* Contact options container */
 .contact-options {
     display: flex;
-    flex-direction: column;
     gap: 1rem;
-    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
-/* Contact Page Styles */
+/* Contact main section */
 .contact-main {
     padding: 5rem 0;
     background: white;
 }
 
+/* Contact grid layout */
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
     margin-top: 3rem;
 }
 
+/* Contact details styling */
 .contact-details {
     margin-top: 2rem;
 }
 
+/* Individual contact item */
 .contact-item {
     margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e9ecef;
 }
 
+/* Remove margin from last contact item */
 .contact-item:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
 }
 
+/* Contact item headings */
 .contact-item h3 {
-    color: #2c3e50;
+    color: #3498db;
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
 }
 
+/* Contact item links */
 .contact-item a {
-    color: #3498db;
+    color: #555;
     text-decoration: none;
 }
 
+/* Contact item link hover */
 .contact-item a:hover {
-    text-decoration: underline;
+    color: #3498db;
 }
 
+/* Emergency contact section */
 .emergency-contact {
     background: #f8f9fa;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     margin-top: 2rem;
 }
 
+/* Emergency contact heading */
 .emergency-contact h3 {
     color: #e74c3c;
     margin-bottom: 1rem;
 }
 
-/* Contact Form Styles */
+/* ============================================
+   FORM STYLES
+   ============================================ */
+
+/* Contact form container */
 .contact-form {
     background: #f8f9fa;
-    padding: 2.5rem;
-    border-radius: 15px;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
+/* Form group styling */
 .form-group {
     margin-bottom: 1.5rem;
 }
 
+/* Form labels */
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #2c3e50;
+    color: #333;
     font-weight: 500;
 }
 
+/* Form inputs and textarea */
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 1rem;
-    border: 2px solid #e9ecef;
-    border-radius: 8px;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    font-family: 'Inter', sans-serif;
 }
 
+/* Form input focus state */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -709,47 +876,57 @@ p {
     border-color: #3498db;
 }
 
+/* Textarea specific styling */
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
 }
 
+/* Checkbox group styling */
 .checkbox-group {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
+/* Checkbox label */
 .checkbox-label {
     display: flex;
     align-items: flex-start;
-    gap: 0.8rem;
     cursor: pointer;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    gap: 0.5rem;
 }
 
+/* Hide default checkbox */
 .checkbox-label input[type="checkbox"] {
     width: auto;
     margin: 0;
 }
 
+/* Form submit button */
 .form-submit {
     width: 100%;
     margin-top: 1rem;
 }
 
+/* ============================================
+   CONSULTATION REMINDER SECTION
+   ============================================ */
+
+/* Consultation reminder section */
 .consultation-reminder {
     padding: 5rem 0;
     background: #f8f9fa;
 }
 
+/* Consultation content container */
 .consultation-content {
-    text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
+/* Consultation benefits grid */
 .consultation-benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -757,133 +934,174 @@ p {
     margin-top: 3rem;
 }
 
+/* Individual benefit item */
 .benefit {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
-    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Benefit title */
 .benefit h3 {
     color: #3498db;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
-/* Responsive Design */
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE STYLES
+   ============================================ */
+
+/* Tablet and mobile breakpoint */
 @media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
+    /* Show mobile navigation toggle */
     .nav-toggle {
         display: flex;
     }
 
-    .hero {
-        padding: 6rem 0 3rem;
+    /* Hide navigation menu by default on mobile */
+    .nav-menu {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
     }
 
+    /* Show navigation menu when active */
+    .nav-menu.active {
+        transform: translateY(0);
+    }
+
+    /* Mobile navigation toggle active state */
+    .nav-toggle {
+        z-index: 1001;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        min-height: 80vh;
+        padding: 0 1rem;
+    }
+
+    /* Hero title mobile sizing */
     .hero-title {
         font-size: 2.5rem;
     }
 
+    /* Hero subtitle mobile sizing */
     .hero-subtitle {
         font-size: 1.1rem;
     }
 
+    /* Hero actions mobile layout */
     .hero-actions {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Button mobile sizing */
     .btn-primary,
     .btn-secondary {
-        width: 200px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 
+    /* Features grid mobile layout */
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
+    /* Testimonials grid mobile layout */
     .testimonials-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
+    /* Team grid mobile layout */
     .team-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
+    /* Consultation details mobile layout */
     .consultation-details {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
+    /* Contact grid mobile layout */
     .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .service-features {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
+    /* Service features mobile layout */
+    .service-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Consultation benefits mobile layout */
     .consultation-benefits {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
+    /* Contact options mobile layout */
     .contact-options {
         flex-direction: column;
+        align-items: center;
     }
 
+    /* Container mobile padding */
     .container {
         padding: 0 1rem;
     }
 }
 
+/* Mobile phone breakpoint */
 @media (max-width: 480px) {
+    /* Hero title very small screens */
     .hero-title {
         font-size: 2rem;
     }
 
+    /* Section headings mobile */
     h2 {
         font-size: 2rem;
     }
 
+    /* Testimonial mobile adjustments */
     .testimonial {
         padding: 1.5rem;
     }
 
+    /* About points mobile layout */
     .about-points {
-        text-align: center;
+        padding: 0 1rem;
     }
 
+    /* Team member mobile adjustments */
     .team-member {
         padding: 1.5rem;
     }
 
+    /* Contact form mobile adjustments */
     .contact-form {
         padding: 1.5rem;
     }
 
+    /* Member credentials mobile layout */
     .member-credentials {
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
