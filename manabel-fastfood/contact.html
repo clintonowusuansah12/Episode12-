@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Manabel FastFood - We would love to hear from you!" />
+    <title>Contact Us | Manabel FastFood</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Manabel FastFood home">
+          <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+          <span class="logo-text">Manabel FastFood</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primary-navigation" class="primary-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special_offers.html">Special Offers</a></li>
+            <li><a href="order.html" class="nav-cta">Order Online</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h1 class="section-title">Get in Touch</h1>
+            <p class="section-subtitle">Have questions or feedback? We'd love to hear from you!</p>
+          </header>
+
+          <div id="contact-notice" class="notice" role="status" aria-live="polite" style="display:block;"></div>
+
+          <div class="form-grid" style="align-items: start;">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="cname">Name</label>
+                <input id="cname" name="name" type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="cmessage">Message</label>
+                <textarea id="cmessage" name="message" placeholder="Write your message..." required></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+
+            <div>
+              <div class="card" style="padding:18px;">
+                <p style="margin:0 0 10px;"><strong>Visit Us</strong></p>
+                <p style="margin:0 0 6px;">123 Flavor Street</p>
+                <p style="margin:0 0 6px;">Taste City, FL 45678</p>
+                <p style="margin:0;">Phone: (555) 123-4567</p>
+              </div>
+              <div style="margin-top:16px;">
+                <iframe class="map-embed" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531596!3d-37.81627974201495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzI3LjQiRQ!5e0!3m2!1sen!2sus!4v1614556800000"></iframe>
+              </div>
+
+              <div class="footer-social" style="margin-top: 16px;">
+                <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+            <span class="logo-text">Manabel FastFood</span>
+          </a>
+          <p class="footer-tagline">Savor the Flavor, Fast!</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="special_offers.html">Special Offers</a>
+          <a href="order.html">Order Online</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Manabel FastFood. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
+

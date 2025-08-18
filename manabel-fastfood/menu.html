@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Manabel FastFood Menu - Burgers, Sides, and Drinks. Fresh, fast, and flavorful." />
+    <title>Our Menu | Manabel FastFood</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Manabel FastFood home">
+          <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+          <span class="logo-text">Manabel FastFood</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primary-navigation" class="primary-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" aria-current="page">Menu</a></li>
+            <li><a href="special_offers.html">Special Offers</a></li>
+            <li><a href="order.html" class="nav-cta">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h1 class="section-title">Our Menu</h1>
+            <p class="section-subtitle">Freshly made, served fast.</p>
+          </header>
+
+          <!-- Burgers -->
+          <div class="menu-category" id="burgers">
+            <div class="menu-header">
+              <h3>Burgers</h3>
+              <span class="helper-text">Grilled to perfection</span>
+            </div>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1887&auto=format&fit=crop" alt="Classic Cheeseburger" />
+                <div>
+                  <h4>Classic Cheeseburger</h4>
+                  <p>Juicy beef patty, melted cheese, and fresh toppings.</p>
+                </div>
+                <div class="price">$8.99</div>
+              </div>
+              <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1543339308-43f2a2c4dc9c?q=80&w=1932&auto=format&fit=crop" alt="Veggie Burger" />
+                <div>
+                  <h4>Veggie Burger</h4>
+                  <p>A tasty plant-based patty with all the fixings.</p>
+                </div>
+                <div class="price">$7.49</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sides -->
+          <div class="menu-category" id="sides">
+            <div class="menu-header">
+              <h3>Sides</h3>
+              <span class="helper-text">Perfect pairings</span>
+            </div>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=2070&auto=format&fit=crop" alt="French Fries" />
+                <div>
+                  <h4>French Fries</h4>
+                  <p>Crispy golden fries.</p>
+                </div>
+                <div class="price">$2.99</div>
+              </div>
+              <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=2069&auto=format&fit=crop" alt="Onion Rings" />
+                <div>
+                  <h4>Onion Rings</h4>
+                  <p>Crispy and delicious!</p>
+                </div>
+                <div class="price">$3.49</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-category" id="drinks">
+            <div class="menu-header">
+              <h3>Drinks</h3>
+              <span class="helper-text">Cool and refreshing</span>
+            </div>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=2069&auto=format&fit=crop" alt="Soft Drinks" />
+                <div>
+                  <h4>Soft Drinks</h4>
+                  <p>Coke, Diet Coke, Sprite</p>
+                </div>
+                <div class="price">$1.99 each</div>
+              </div>
+              <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=2070&auto=format&fit=crop" alt="Milkshakes" />
+                <div>
+                  <h4>Milkshakes</h4>
+                  <p>Chocolate, vanilla, and strawberry. Rich and creamy.</p>
+                </div>
+                <div class="price">$4.99</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section" style="padding-top: 24px;">
+            <div class="card" style="padding: 18px; display:flex; align-items:center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <p style="margin:0; font-weight:600;">Join Us for a Tasty Experience!</p>
+              <a class="btn btn-primary" href="order.html">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+            <span class="logo-text">Manabel FastFood</span>
+          </a>
+          <p class="footer-tagline">Savor the Flavor, Fast!</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="menu.html" aria-current="page">Menu</a>
+          <a href="special_offers.html">Special Offers</a>
+          <a href="order.html">Order Online</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Manabel FastFood. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
+

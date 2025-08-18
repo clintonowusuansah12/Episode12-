@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Manabel FastFood Special Offers - Great deals on meals and drinks!" />
+    <title>Special Offers | Manabel FastFood</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Manabel FastFood home">
+          <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+          <span class="logo-text">Manabel FastFood</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primary-navigation" class="primary-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special_offers.html" aria-current="page">Special Offers</a></li>
+            <li><a href="order.html" class="nav-cta">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h1 class="section-title">Special Offers</h1>
+            <p class="section-subtitle">Save more, enjoy more!</p>
+          </header>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-body">
+                <h3 class="card-title">Happy Hour</h3>
+                <p class="card-text">Enjoy 15% off all drinks from 3 PM to 5 PM!</p>
+                <a href="order.html" class="card-link">Grab This Deal <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-body">
+                <h3 class="card-title">Family Combo</h3>
+                <p class="card-text">Get 2 Burgers, 2 Sides, and 2 Drinks for only $19.99!</p>
+                <a href="order.html" class="card-link">Order Combo <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section" style="padding-top: 24px;">
+            <div class="card" style="padding: 18px; display:flex; align-items:center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <p style="margin:0; font-weight:600;">Grab These Deals Today!</p>
+              <a class="btn btn-primary" href="order.html">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+            <span class="logo-text">Manabel FastFood</span>
+          </a>
+          <p class="footer-tagline">Savor the Flavor, Fast!</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="special_offers.html" aria-current="page">Special Offers</a>
+          <a href="order.html">Order Online</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Manabel FastFood. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
+
