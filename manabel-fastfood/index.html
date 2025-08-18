@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Manabel FastFood - Savor the Flavor, Fast! Delicious burgers, pizzas, salads, drinks, and desserts. Order online or dine in." />
+    <title>Manabel FastFood | Savor the Flavor, Fast!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Manabel FastFood home">
+          <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+          <span class="logo-text">Manabel FastFood</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primary-navigation" class="primary-nav">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special_offers.html">Special Offers</a></li>
+            <li><a href="order.html" class="nav-cta">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="hero"
+        style="--hero-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1887&auto=format&fit=crop');"
+      >
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">Taste the Happiness at Manabel FastFood!</h1>
+          <p class="hero-subtitle">Welcome to Manabel Fastfood - Where Every Bite is a Delight!</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="order.html">Order Online</a>
+            <a class="btn btn-secondary" href="menu.html">View Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Menu Section -->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title">Fan Favorites</h2>
+            <p class="section-subtitle">Crafted fresh, served fast, and always delicious.</p>
+          </header>
+
+          <div class="card-grid">
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1551782450-17144c3a2f73?q=80&w=1974&auto=format&fit=crop" alt="Signature Burger with melted cheese and fresh toppings" />
+              <div class="card-body">
+                <h3 class="card-title">Try Our Signature Burger!</h3>
+                <p class="card-text">Juicy, cheesy, and stacked with crisp veggies for the perfect bite.</p>
+                <a href="order.html" class="card-link">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=2069&auto=format&fit=crop" alt="Crispy golden chicken nuggets" />
+              <div class="card-body">
+                <h3 class="card-title">Crispy Chicken Nuggets to Share!</h3>
+                <p class="card-text">Golden, crunchy, and perfect for dipping with friends.</p>
+                <a href="order.html" class="card-link">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1543339308-43f2a2c4dc9c?q=80&w=1932&auto=format&fit=crop" alt="Delicious vegan burger option" />
+              <div class="card-body">
+                <h3 class="card-title">Delicious Vegan Options Available!</h3>
+                <p class="card-text">Plant-based goodness packed with flavor and freshness.</p>
+                <a href="menu.html" class="card-link">See Menu <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+            <span class="logo-text">Manabel FastFood</span>
+          </a>
+          <p class="footer-tagline">Savor the Flavor, Fast!</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="special_offers.html">Special Offers</a>
+          <a href="order.html">Order Online</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Manabel FastFood. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
+

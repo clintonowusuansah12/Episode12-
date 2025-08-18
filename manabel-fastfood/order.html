@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Order Online from Manabel FastFood - Fresh and fast meals delivered to you." />
+    <title>Order Online | Manabel FastFood</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Manabel FastFood home">
+          <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+          <span class="logo-text">Manabel FastFood</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="primary-navigation" class="primary-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special_offers.html">Special Offers</a></li>
+            <li><a href="order.html" class="nav-cta" aria-current="page">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h1 class="section-title">Order Online</h1>
+            <p class="section-subtitle">Place your order now and enjoy your favorite meals from the comfort of your home!</p>
+          </header>
+
+          <div id="order-notice" class="notice" role="status" aria-live="polite" style="display:block;"></div>
+
+          <form id="order-form" novalidate>
+            <div class="menu-category">
+              <div class="menu-header"><h3>Your Selection</h3></div>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="burger">Burger</label>
+                  <select id="burger" name="burger" data-price required>
+                    <option value="" data-price="0">Select a burger...</option>
+                    <option value="classic" data-price="8.99">Classic Cheeseburger - $8.99</option>
+                    <option value="veggie" data-price="7.49">Veggie Burger - $7.49</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="side">Side</label>
+                  <select id="side" name="side" data-price required>
+                    <option value="" data-price="0">Select a side...</option>
+                    <option value="fries" data-price="2.99">French Fries - $2.99</option>
+                    <option value="rings" data-price="3.49">Onion Rings - $3.49</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="drink">Drink</label>
+                  <select id="drink" name="drink" data-price required>
+                    <option value="" data-price="0">Select a drink...</option>
+                    <option value="soda" data-price="1.99">Soft Drink - $1.99</option>
+                    <option value="shake" data-price="4.99">Milkshake - $4.99</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Total</label>
+                  <div class="notice" style="background:#fff;">Current Total: <strong id="order-total">$0.00</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <div class="menu-header"><h3>Customer Information</h3></div>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" required />
+                </div>
+                <div class="form-group">
+                  <label for="delivery">Delivery Option</label>
+                  <select id="delivery" name="delivery" required>
+                    <option value="">Choose...</option>
+                    <option value="pickup">Pickup</option>
+                    <option value="delivery">Delivery</option>
+                  </select>
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                  <label for="address">Delivery Address (if Delivery)</label>
+                  <input id="address" name="address" type="text" placeholder="123 Main St, City" />
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                  <label for="notes">Order Notes</label>
+                  <textarea id="notes" name="notes" placeholder="Any special requests?"></textarea>
+                </div>
+              </div>
+              <p class="helper-text">By placing this order, you agree to our terms and privacy policy.</p>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Submit Your Order</button>
+              <a class="btn btn-secondary" href="menu.html">Back to Menu</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><i class="fa-solid fa-burger" aria-hidden="true"></i></span>
+            <span class="logo-text">Manabel FastFood</span>
+          </a>
+          <p class="footer-tagline">Savor the Flavor, Fast!</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="special_offers.html">Special Offers</a>
+          <a href="order.html" aria-current="page">Order Online</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Manabel FastFood. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
+
