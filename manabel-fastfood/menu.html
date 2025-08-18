@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Manabel FastFood Menu — burgers, pizzas, salads, drinks, desserts." />
+    <title>Menu | Manabel FastFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand" aria-label="Manabel FastFood home">
+          <span class="brand-mark" aria-hidden="true">🍔</span>
+          <span class="brand-name">Manabel FastFood</span>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">☰</button>
+          <ul id="primaryNav" class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="is-active" href="./menu.html">Menu</a></li>
+            <li><a class="btn btn-primary btn-sm" href="#order">Order Online</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="menu-page">
+      <section class="section compact">
+        <div class="container section-head">
+          <h1>Our Menu</h1>
+          <p class="muted">Burgers, pizzas, salads, drinks, and desserts crafted for cravings.</p>
+        </div>
+      </section>
+
+      <section id="burgers" class="section">
+        <div class="container">
+          <h2>Burgers</h2>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60" alt="Classic Manabel Burger" />
+              <div>
+                <header>
+                  <h3>Classic Manabel Burger</h3>
+                  <span class="price">$8.99</span>
+                </header>
+                <p>Beef patty, cheddar, lettuce, tomatoes, pickles, house sauce, brioche bun.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60" alt="Double Smash Burger" />
+              <div>
+                <header>
+                  <h3>Double Smash Burger</h3>
+                  <span class="price">$10.99</span>
+                </header>
+                <p>Two smashed patties, American cheese, grilled onions, special sauce.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd65?auto=format&fit=crop&w=800&q=60" alt="Spicy Chicken Burger" />
+              <div>
+                <header>
+                  <h3>Spicy Chicken Burger</h3>
+                  <span class="price">$9.49</span>
+                </header>
+                <p>Crispy chicken, chili mayo, lettuce, tomato, pickles.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pizzas" class="section">
+        <div class="container">
+          <h2>Pizzas</h2>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1548365328-8b6db784f0bf?auto=format&fit=crop&w=800&q=60" alt="Pepperoni Feast" />
+              <div>
+                <header>
+                  <h3>Pepperoni Feast</h3>
+                  <span class="price">$13.99</span>
+                </header>
+                <p>Tomato sauce, mozzarella, double pepperoni, oregano.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=800&q=60" alt="Margherita" />
+              <div>
+                <header>
+                  <h3>Margherita</h3>
+                  <span class="price">$11.99</span>
+                </header>
+                <p>San Marzano tomatoes, fresh mozzarella, basil, olive oil.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1541745537413-b804b9f33491?auto=format&fit=crop&w=800&q=60" alt="BBQ Chicken" />
+              <div>
+                <header>
+                  <h3>BBQ Chicken</h3>
+                  <span class="price">$14.49</span>
+                </header>
+                <p>BBQ sauce, mozzarella, grilled chicken, red onion, cilantro.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="salads" class="section">
+        <div class="container">
+          <h2>Salads</h2>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=60" alt="Garden Fresh" />
+              <div>
+                <header>
+                  <h3>Garden Fresh</h3>
+                  <span class="price">$7.49</span>
+                </header>
+                <p>Mixed greens, cherry tomatoes, cucumbers, olives, feta, lemon vinaigrette.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=60" alt="Caesar Supreme" />
+              <div>
+                <header>
+                  <h3>Caesar Supreme</h3>
+                  <span class="price">$7.99</span>
+                </header>
+                <p>Romaine, parmesan, croutons, Caesar dressing, grilled chicken optional.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="drinks" class="section">
+        <div class="container">
+          <h2>Drinks</h2>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?auto=format&fit=crop&w=800&q=60" alt="Craft Lemonade" />
+              <div>
+                <header>
+                  <h3>Craft Lemonade</h3>
+                  <span class="price">$2.99</span>
+                </header>
+                <p>Fresh lemons, cane sugar, still or sparkling.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1541976590-713941681591?auto=format&fit=crop&w=800&q=60" alt="Iced Tea" />
+              <div>
+                <header>
+                  <h3>Iced Tea</h3>
+                  <span class="price">$2.49</span>
+                </header>
+                <p>Black tea brew, lightly sweetened, lemon wedge.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="desserts" class="section">
+        <div class="container">
+          <h2>Desserts</h2>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=60" alt="Chocolate Brownie" />
+              <div>
+                <header>
+                  <h3>Chocolate Brownie</h3>
+                  <span class="price">$4.49</span>
+                </header>
+                <p>Rich, fudgy, served warm with optional vanilla ice cream.</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <img src="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?auto=format&fit=crop&w=800&q=60" alt="Classic Cheesecake" />
+              <div>
+                <header>
+                  <h3>Classic Cheesecake</h3>
+                  <span class="price">$4.99</span>
+                </header>
+                <p>Creamy cheesecake, graham crust, berry coulis.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="section alt">
+        <div class="container order-block">
+          <div>
+            <h2>Ready to Order?</h2>
+            <p class="muted">Call us or email your order. Online ordering is coming soon.</p>
+            <ul class="contact-list">
+              <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+              <li>Email: <a href="mailto:orders@manabelfastfood.com">orders@manabelfastfood.com</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-primary" href="tel:+1234567890">Call to Order</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Manabel FastFood</strong>
+          <p class="muted">Fast, fresh, and flavorful — every time.</p>
+        </div>
+        <div class="footer-meta">
+          <span>Open daily: 10:00 — 22:00</span>
+          <span>•</span>
+          <a href="mailto:orders@manabelfastfood.com">orders@manabelfastfood.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/app.js" defer></script>
+  </body>
+  </html>
+

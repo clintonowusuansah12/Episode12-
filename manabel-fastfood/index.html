@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Manabel FastFood — burgers, pizzas, salads, drinks, and desserts. Taste the happiness!" />
+    <title>Manabel FastFood | Taste the Happiness!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand" aria-label="Manabel FastFood home">
+          <span class="brand-mark" aria-hidden="true">🍔</span>
+          <span class="brand-name">Manabel FastFood</span>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">☰</button>
+          <ul id="primaryNav" class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a class="btn btn-primary btn-sm" href="./menu.html#order">Order Online</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero: Taste the Happiness">
+        <div class="hero-bg" role="img" aria-label="Signature gourmet burger"></div>
+        <div class="container hero-content">
+          <h1>Taste the Happiness at Manabel FastFood!</h1>
+          <p class="hero-sub">Crave‑worthy burgers, sizzling pizzas, crisp salads, and sweet treats — made fresh, served fast.</p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="./menu.html#order">Order Online</a>
+            <a class="btn btn-ghost" href="./menu.html">View Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Popular Picks</h2>
+            <p class="muted">A taste of our customer favorites</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=60" alt="Classic Manabel Burger" class="card-img" />
+              <div class="card-body">
+                <h3 class="card-title">Classic Manabel Burger</h3>
+                <p class="card-text">Juicy beef patty, cheddar, lettuce, tomatoes, house sauce — all in a toasted brioche bun.</p>
+                <div class="card-foot">
+                  <span class="price">$8.99</span>
+                  <a class="btn btn-link" href="./menu.html#burgers">See more</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1548365328-8b6db784f0bf?auto=format&fit=crop&w=1200&q=60" alt="Pepperoni Feast Pizza" class="card-img" />
+              <div class="card-body">
+                <h3 class="card-title">Pepperoni Feast Pizza</h3>
+                <p class="card-text">Hand‑tossed crust, rich tomato sauce, mozzarella, and loads of pepperoni.</p>
+                <div class="card-foot">
+                  <span class="price">$13.99</span>
+                  <a class="btn btn-link" href="./menu.html#pizzas">See more</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=60" alt="Garden Fresh Salad" class="card-img" />
+              <div class="card-body">
+                <h3 class="card-title">Garden Fresh Salad</h3>
+                <p class="card-text">Crisp greens, cherry tomatoes, cucumbers, olives, and feta with lemon vinaigrette.</p>
+                <div class="card-foot">
+                  <span class="price">$7.49</span>
+                  <a class="btn btn-link" href="./menu.html#salads">See more</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=60" alt="Chocolate Brownie" class="card-img" />
+              <div class="card-body">
+                <h3 class="card-title">Chocolate Brownie</h3>
+                <p class="card-text">Fudgy, rich, and served warm. The perfect finish to your meal.</p>
+                <div class="card-foot">
+                  <span class="price">$4.49</span>
+                  <a class="btn btn-link" href="./menu.html#desserts">See more</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="center mt-lg">
+            <a class="btn btn-primary" href="./menu.html">Explore Full Menu</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Manabel FastFood</strong>
+          <p class="muted">Fast, fresh, and flavorful — every time.</p>
+        </div>
+        <div class="footer-meta">
+          <span>Open daily: 10:00 — 22:00</span>
+          <span>•</span>
+          <a href="mailto:orders@manabelfastfood.com">orders@manabelfastfood.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/app.js" defer></script>
+  </body>
+  </html>
+
