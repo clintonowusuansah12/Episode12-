@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BiteBurst | Fast, Fresh, Delicious</title>
+  <meta name="description" content="BiteBurst serves crave-worthy burgers, crispy fries, and refreshing drinks. Order online, view our menu, and find a location near you." />
+  <meta name="theme-color" content="#e63946" />
+  <meta property="og:title" content="BiteBurst | Fast, Fresh, Delicious" />
+  <meta property="og:description" content="Order online, view our menu, and find a BiteBurst location near you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+  <style>
+    /* Fallback if CSS fails to load: ensure minimal legibility */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+  </style>
+  <link rel="icon" href="data:," />
+  <meta name="robots" content="index,follow" />
+</head>
+<body class="theme-fastfood">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="BiteBurst home">
+        <span class="logo-mark">🍔</span>
+        <span class="logo-text">BiteBurst</span>
+      </a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Toggle menu</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="primary-navigation" class="nav" data-collapsed="true">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li class="nav-item-dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-controls="menu-submenu">Menu</button>
+            <div id="menu-submenu" class="dropdown" hidden>
+              <a href="#menu-food">Food Items</a>
+              <a href="#menu-drinks">Drinks</a>
+              <a href="#menu-specials">Specials</a>
+            </div>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#order" class="highlight-link">Order Online</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li class="optional"><a href="#blog">Blog</a></li>
+          <li class="optional"><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-media" role="img" aria-label="Juicy burger with crispy fries and soda"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Fresh. Fast. Flavorful.</p>
+        <h1>Taste the Passion in Every Bite!</h1>
+        <p class="subhead">Burgers, fries, and drinks made to order. Dine in, pick up, or get it delivered hot and fast.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#order">Order Now</a>
+          <a class="btn btn-ghost" href="#menu">View Menu</a>
+        </div>
+        <div class="hero-badge">2-for-1 Tuesdays on classic burgers</div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Menu</h2>
+          <p>From juicy burgers to refreshing drinks, explore our crowd favorites.</p>
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="food" id="menu-food">Food Items</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="drinks" id="menu-drinks">Drinks</button>
+            <button class="tab" role="tab" aria-selected="false" data-filter="specials" id="menu-specials">Specials</button>
+          </div>
+        </header>
+
+        <div class="card-grid menu-grid">
+          <article class="card menu-item" data-category="food">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60" alt="Classic Cheeseburger" loading="lazy" />
+            <div class="card-body">
+              <h3>Classic Cheeseburger</h3>
+              <p>Grilled beef patty, cheddar, crisp lettuce, tomato, house sauce.</p>
+              <div class="meta">
+                <span class="price">$7.99</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="food">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=60" alt="Crispy Chicken Sandwich" loading="lazy" />
+            <div class="card-body">
+              <h3>Crispy Chicken Sandwich</h3>
+              <p>Buttermilk fried chicken, pickles, slaw, spicy mayo.</p>
+              <div class="meta">
+                <span class="price">$8.49</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="food">
+            <img src="https://images.unsplash.com/photo-1550547660-a8e8e8f2c2b1?auto=format&fit=crop&w=800&q=60" alt="Loaded Fries" loading="lazy" />
+            <div class="card-body">
+              <h3>Loaded Fries</h3>
+              <p>Golden fries topped with cheese, scallions, and house sauce.</p>
+              <div class="meta">
+                <span class="price">$4.99</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=60" alt="Strawberry Shake" loading="lazy" />
+            <div class="card-body">
+              <h3>Strawberry Shake</h3>
+              <p>Made with real berries and creamy ice cream.</p>
+              <div class="meta">
+                <span class="price">$3.99</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=800&q=60" alt="Craft Lemonade" loading="lazy" />
+            <div class="card-body">
+              <h3>Craft Lemonade</h3>
+              <p>Tangy, refreshing, and just the right amount of sweet.</p>
+              <div class="meta">
+                <span class="price">$2.49</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="specials">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60" alt="BBQ Bacon Burger (Special)" loading="lazy" />
+            <div class="card-body">
+              <h3>BBQ Bacon Burger</h3>
+              <p>Smoky BBQ, crispy bacon, grilled onions. Limited time.</p>
+              <div class="meta">
+                <span class="price">$9.49</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="specials">
+            <img src="https://images.unsplash.com/photo-1542444459-db63c2c11a4d?auto=format&fit=crop&w=800&q=60" alt="Spicy Wings (Special)" loading="lazy" />
+            <div class="card-body">
+              <h3>Spicy Wings</h3>
+              <p>Cayenne, garlic, and a honey glaze heat wave.</p>
+              <div class="meta">
+                <span class="price">$6.99</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+          <article class="card menu-item" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1582571352032-448f7928eca5?auto=format&fit=crop&w=800&q=60" alt="Iced Cola" loading="lazy" />
+            <div class="card-body">
+              <h3>Iced Cola</h3>
+              <p>Classic, ice-cold, and endlessly refreshing.</p>
+              <div class="meta">
+                <span class="price">$1.99</span>
+                <button class="btn btn-small">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <h2>About Us</h2>
+          <p>We started in a tiny kitchen with one big goal: serve crave-worthy comfort food made with quality ingredients and a lot of heart.</p>
+          <p>From sourcing fresh produce to hand-pressing patties, our team puts care into every order.</p>
+          <ul class="checklist">
+            <li>Fresh, never frozen beef</li>
+            <li>Vegetarian and gluten-friendly options</li>
+            <li>Locally sourced ingredients when possible</li>
+          </ul>
+        </div>
+        <div class="media shadow">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=60" alt="Our kitchen team preparing fresh food" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="locations" class="section">
+      <div class="container">
+        <h2>Locations</h2>
+        <div class="locations-grid">
+          <div class="location-card">
+            <h3>Downtown</h3>
+            <p>123 Main St, Cityville</p>
+            <p>Mon–Sun: 10am–10pm</p>
+            <a class="link" href="tel:+1234567890">+1 (234) 567-890</a>
+          </div>
+          <div class="location-card">
+            <h3>Uptown</h3>
+            <p>456 Elm Ave, Cityville</p>
+            <p>Mon–Sun: 10am–11pm</p>
+            <a class="link" href="tel:+1098765432">+1 (098) 765-432</a>
+          </div>
+          <div class="location-card">
+            <h3>Riverside</h3>
+            <p>789 River Rd, Cityville</p>
+            <p>Mon–Sun: 9am–9pm</p>
+            <a class="link" href="tel:+1234987650">+1 (234) 987-650</a>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe title="Map to BiteBurst" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24156.26176694229!2d-73.9851302!3d40.7588958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMDYuNSJX!5e0!3m2!1sen!2sus!4v1610000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section section-alt">
+      <div class="container">
+        <h2>Order Online</h2>
+        <p>Get your favorites delivered or ready for pickup.</p>
+        <div class="providers">
+          <a class="provider" href="https://www.ubereats.com" target="_blank" rel="noopener">UberEats</a>
+          <a class="provider" href="https://www.doordash.com" target="_blank" rel="noopener">DoorDash</a>
+          <a class="provider" href="https://www.grubhub.com" target="_blank" rel="noopener">Grubhub</a>
+        </div>
+        <p class="fineprint">Delivery zones and fees may vary by provider. Offers subject to change.</p>
+      </div>
+    </section>
+
+    <section id="catering" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Catering</h2>
+          <p>Bring BiteBurst to your next event. From office lunches to birthdays, we’ve got you covered.</p>
+          <ul class="checklist">
+            <li>Boxed lunches and trays</li>
+            <li>Vegetarian-friendly options</li>
+            <li>On-site setup on request</li>
+          </ul>
+        </div>
+        <form id="catering-form" class="form card shadow">
+          <h3>Request Catering</h3>
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <div class="grid-2">
+            <label>
+              Event date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Guests
+              <input type="number" name="guests" min="1" step="1" required />
+            </label>
+          </div>
+          <label>
+            Phone
+            <input type="tel" name="phone" />
+          </label>
+          <label>
+            Details
+            <textarea name="details" rows="4" placeholder="Tell us about your event..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Request</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Questions or feedback? We’d love to hear from you.</p>
+          <div class="contact-details">
+            <p>Email: <a class="link" href="mailto:hello@biteburst.com">hello@biteburst.com</a></p>
+            <p>Phone: <a class="link" href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Follow: <a class="link" href="#" aria-label="Instagram">Instagram</a> • <a class="link" href="#" aria-label="Facebook">Facebook</a> • <a class="link" href="#" aria-label="TikTok">TikTok</a></p>
+          </div>
+        </div>
+        <form id="contact-form" class="form card shadow">
+          <h3>Send a Message</h3>
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>What Our Guests Say</h2>
+        <div class="card-grid">
+          <blockquote class="quote card">
+            <p>“Best burger in town. Crispy fries are a must!”</p>
+            <footer>— Alex R.</footer>
+          </blockquote>
+          <blockquote class="quote card">
+            <p>“Quick service and the shakes are unreal.”</p>
+            <footer>— Priya S.</footer>
+          </blockquote>
+          <blockquote class="quote card">
+            <p>“Perfect for lunch breaks. Love the specials.”</p>
+            <footer>— Mateo G.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section section-alt">
+      <div class="container">
+        <h2>From the Blog</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=60" alt="Seasonal ingredients" loading="lazy" />
+            <div class="card-body">
+              <h3>How We Pick Seasonal Ingredients</h3>
+              <p>Freshness matters. Here’s how our team sources the best.</p>
+              <a class="link" href="#">Read more</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1527169402691-feff5539e52c?auto=format&fit=crop&w=800&q=60" alt="Behind the scenes in the kitchen" loading="lazy" />
+            <div class="card-body">
+              <h3>Behind the Grill</h3>
+              <p>A day in the life of our kitchen team.</p>
+              <a class="link" href="#">Read more</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1519778054200-c0e1a4b357e1?auto=format&fit=crop&w=800&q=60" alt="Community event" loading="lazy" />
+            <div class="card-body">
+              <h3>Serving the Community</h3>
+              <p>Highlights from our latest food drive.</p>
+              <a class="link" href="#">Read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1550547660-1c7aee7650d2?auto=format&fit=crop&w=800&q=60" alt="Burger close-up" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc5?auto=format&fit=crop&w=800&q=60" alt="Fries and sauces" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1553547270-dc2bccc5d0ff?auto=format&fit=crop&w=800&q=60" alt="Milkshake trio" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=60" alt="Restaurant interior" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7?auto=format&fit=crop&w=800&q=60" alt="Grill flames" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1543352634-873f17a7a088?auto=format&fit=crop&w=800&q=60" alt="Fresh ingredients" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <h2>Get Deals in Your Inbox</h2>
+          <p>Sign up for limited-time offers, new items, and more.</p>
+        </div>
+        <form id="newsletter-form" class="form inline-form">
+          <label class="sr-only" for="newsletter-email">Email</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="Your email address" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo">
+          <span class="logo-mark">🍔</span>
+          <span class="logo-text">BiteBurst</span>
+        </a>
+        <p class="fineprint">© <span id="year"></span> BiteBurst. All rights reserved.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order Online</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hours">
+        <h3>Hours</h3>
+        <p>Mon–Thu: 10am–10pm</p>
+        <p>Fri–Sat: 10am–11pm</p>
+        <p>Sun: 10am–9pm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/scripts.js" defer></script>
+  <script>
+    // Set current year in footer if JS is enabled
+    (function(){
+      var yearNode = document.getElementById('year');
+      if (yearNode) { yearNode.textContent = new Date().getFullYear(); }
+    })();
+  </script>
+</body>
+</html>
+
