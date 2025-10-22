@@ -1,92 +1,79 @@
-# Thompson Legal - Plain & Box-Free Lawyer Website
+# Johnson & Associates Law Firm Website
 
-A modern, minimalist lawyer website designed with a clean, professional aesthetic that avoids heavy borders and boxes. Built with pure HTML, CSS, and JavaScript.
+A modern, professional lawyer website built with HTML, CSS, and JavaScript featuring a clean, "plain box free" design.
 
 ## Features
 
-### Design Philosophy
-- **Plain & Box-Free**: Clean design without heavy borders or visual clutter
-- **Modern Typography**: Inter font family for excellent readability
-- **Minimal Visual Elements**: Emphasis on whitespace and clean lines
-- **Professional Color Scheme**: Blue (#3498db) and dark gray (#2c3e50) palette
-- **Subtle Animations**: Smooth hover effects and transitions
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI**: Clean design with smooth animations and hover effects
+- **Interactive Elements**: Mobile navigation, smooth scrolling, form validation
+- **Contact Form**: Functional contact form with validation and notifications
+- **Professional Sections**: Hero, About, Services, Contact, and Footer
 
-### Pages Included
-- **Homepage**: Hero section, services overview, testimonials, and call-to-action
-- **About**: Team profiles, company values, and achievements
-- **Services**: Detailed legal service descriptions with consultation info
-- **Contact**: Contact form, office information, and emergency contact
+## How to Preview
 
-### Technical Features
-- **Fully Responsive**: Works on desktop, tablet, and mobile devices
-- **Mobile Navigation**: Hamburger menu with smooth animations
-- **Contact Form**: Functional form with validation and user feedback
-- **Smooth Scrolling**: Enhanced user experience with smooth page transitions
-- **SEO-Friendly**: Semantic HTML structure with proper meta tags
+### Option 1: Direct File Opening
+1. Navigate to the folder containing the website files
+2. Double-click on `index.html` to open it in your default web browser
+
+### Option 2: Local Server (Recommended)
+For the best experience, serve the files through a local server:
+
+#### Using Python (if installed):
+```bash
+# Python 3
+python -m http.server 8000
+
+# Python 2
+python -m SimpleHTTPServer 8000
+```
+
+#### Using Node.js (if installed):
+```bash
+# Install a simple server globally
+npm install -g http-server
+
+# Run the server
+http-server
+```
+
+#### Using PHP (if installed):
+```bash
+php -S localhost:8000
+```
+
+Then open your browser and go to `http://localhost:8000`
+
+### Option 3: VS Code Live Server
+If you're using VS Code:
+1. Install the "Live Server" extension
+2. Right-click on `index.html`
+3. Select "Open with Live Server"
 
 ## File Structure
 
 ```
-├── index.html          # Homepage
-├── about.html          # About page
-├── services.html       # Services page
-├── contact.html        # Contact page
-├── css/
-│   └── style.css       # Main stylesheet (box-free design)
-├── js/
-│   └── script.js       # JavaScript for navigation and interactions
-└── README.md           # This file
+.
+├── index.html      # Main HTML file
+├── styles.css      # CSS styling
+├── script.js       # JavaScript functionality
+└── README.md       # This file
 ```
-
-## Key Design Elements
-
-### Clean Navigation
-- Fixed header with blur effect
-- Underline hover animations instead of boxes
-- Mobile-friendly hamburger menu
-
-### Typography & Spacing
-- Large, readable headings with proper hierarchy
-- Generous whitespace for breathing room
-- Clean line heights for optimal readability
-
-### Buttons & Interactive Elements
-- Rounded buttons with subtle shadows instead of borders
-- Smooth hover animations with translateY effects
-- Color transitions for engaging interactions
-
-### Form Design
-- Clean input fields with focus states
-- Minimal border styling
-- Proper spacing and alignment
 
 ## Browser Compatibility
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## Getting Started
-
-1. Open `index.html` in a web browser to view the website
-2. All files are self-contained with no external dependencies except Google Fonts
-3. The website is ready for deployment to any web hosting service
+This website is compatible with all modern browsers including:
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
 
 ## Customization
 
-- Colors can be modified in the CSS file's color variables
-- Content can be updated directly in the HTML files
-- Firm name "Thompson Legal" can be replaced throughout all files
-- Contact information should be updated in all pages and the footer
+You can easily customize the website by:
+- Changing the firm name in `index.html`
+- Modifying colors and fonts in `styles.css`
+- Adding more interactive features in `script.js`
+- Replacing placeholder content with your actual information
 
-## No Dependencies
-
-This website uses only:
-- Pure HTML5
-- Pure CSS3
-- Pure JavaScript (ES6+)
-- Google Fonts (Inter family)
-
-No frameworks, libraries, or build tools required.
+Enjoy your new professional lawyer website!
